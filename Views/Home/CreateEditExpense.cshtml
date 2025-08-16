@@ -11,8 +11,7 @@
 </div>
 
 <form asp-action="CreateEditExpenseForm" asp-controller="Home">
-    <label>ID: </label>
-    <input class="form-control" type="number" asp-for="Id" placeholder="0" />
+    <input class="form-control" type="number" asp-for="Id" hidden/>
     <label class="mt-4">Value: </label>
     <input class="form-control" type="number" asp-for="Value" step="0.01" placeholder="0" />
     <label class="mt-4">Description: </label>
