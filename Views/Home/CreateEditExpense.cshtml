@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model SpendSmart.Models.Expense
+
+<div class="text-center">
+    <h1 class="display-4">Expenses</h1>
+</div>
+
+<form asp-action="CreateEditExpenseForm" asp-controller="Home">
+    <label>ID: </label>
+    <input class="form-control" type="number" asp-for="Id" placeholder="0" />
+    <label class="mt-4">Value: </label>
+    <input class="form-control" type="number" asp-for="Value" step="0.01" placeholder="0" />
+    <label class="mt-4">Description: </label>
+    <input class="form-control" type="text" asp-for="Description" placeholder="some description" />
+    <button class="btn btn-primary mt-4" type="submit">OK</button>
+</form>
